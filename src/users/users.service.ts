@@ -9,7 +9,7 @@ import {
   PrivateKeyAccount,
   zeroAddress,
 } from 'viem';
-import { bsc, bscTestnet } from 'viem/chains';
+import { bsc } from 'viem/chains';
 import { rewardABI } from './dto/reward.abi';
 import { privateKeyToAccount } from 'viem/accounts';
 import { ConfigService } from '@nestjs/config';
@@ -22,7 +22,7 @@ export class UsersService {
     private readonly configService: ConfigService,
   ) {
     const publicClient = createPublicClient({
-      chain: bscTestnet,
+      chain: bsc,
       transport: http(),
     });
 
@@ -127,7 +127,7 @@ export class UsersService {
     const domains = {
       name: 'GMBReward',
       version: '1',
-      chainId: 97,
+      chainId: 56,
       verifyingContract: this.contract.address,
     };
 
