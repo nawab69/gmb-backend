@@ -2,9 +2,9 @@ import { verifyTypedData } from 'viem';
 import { RegisterUserDto } from '../users/dto/register-user.dto';
 
 export const domain = {
-  chainId: 97,
+  chainId: 56,
   name: 'General Mouse Batten',
-  verifyingContract: '0xd888B031072F0607B7DA7fDc3A4034E70d211E61',
+  verifyingContract: '0x1E43682CC97320c61e5f676D1043370F39CDE859',
   version: '1',
 } as const;
 
